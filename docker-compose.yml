@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  rep:
+    image: yitakura731/node-demo-app
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: node-demo-app
+    ports:
+      - "3000:3000"

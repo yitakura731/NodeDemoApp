@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= context1 %></h1>
+    <table align="center">
+      <tr>
+        <th>Device</th>
+        <th>IPAddr</th>
+      </tr>
+      <% for (var i = 0; i < ipAddr.length; i++) { %>
+      <tr>
+        <td><%= ipAddr[i].name %></td>
+        <td><%= ipAddr[i].address %></td>
+      </tr>
+      <% } %>
+    </table>
+  </body>
+</html>
